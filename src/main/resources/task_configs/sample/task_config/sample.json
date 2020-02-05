@@ -1,0 +1,59 @@
+[
+  {
+    "db": {
+      "name": "db_1"
+    },
+    "table": {
+      "name": "table_1"
+    },
+    "sqoop_step": {
+      "select_columns": [
+        "column_1",
+        "column_2"
+      ],
+      "map_columns_hive": {
+        "column_1": "type_1",
+        "column_2": "type_2"
+      }
+    },
+    "hive_orc_step": {
+      "select_columns": [
+        "column_1",
+        "column_2"
+      ],
+      "drop_selected": false,
+      "partition": {
+        "name": "dt",
+        "type": "string",
+        "select_stmt": "date_format(\\`created_on\\`, 'yyyyMMdd')"
+      }
+    }
+  },
+  {
+    "db": {
+      "name": "db_1"
+    },
+    "table": {
+      "name": "table_1"
+    },
+    "hive_orc_step": {},
+    "hive_join_step": {
+      "with_table": "my_table",
+      "on_column": "some_id_column",
+      "using_column": "corresponding_id_column",
+      "partition": {
+        "name": "dt",
+        "type": "string",
+        "select_stmt": "date_format(\\`created_on\\`, 'yyyyMMdd')"
+      }
+    }
+  },
+  {
+    "db": {
+      "name": "db_1"
+    },
+    "table": {
+      "name": "table_1"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "with_table": "my_table",
+    "on_column": "some_id_column",
+    "using_column": "corresponding_id_column",
+    "partition": {
+      "name": "dt",
+      "type": "string",
+      "select_stmt": "date_format(\\`created_on\\`, 'yyyyMMdd')"
+    }
+  }
+]

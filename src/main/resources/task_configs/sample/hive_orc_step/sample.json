@@ -1,0 +1,28 @@
+[
+  {
+    "select_columns": [
+      "column_1",
+      "column_2"
+    ],
+    "drop_selected": false,
+    "add_columns": [
+      {
+        "name": "column_1",
+        "type": "type_1",
+        "select_stmt": "MD5(column_3)"
+      }
+    ],
+    "partition": {
+      "name": "dt",
+      "type": "string",
+      "select_stmt": "date_format(\\`created_on\\`, 'yyyyMMdd')"
+    }
+  },
+  {
+    "select_columns": [
+      "column_1",
+      "column_2"
+    ]
+  },
+  {}
+]

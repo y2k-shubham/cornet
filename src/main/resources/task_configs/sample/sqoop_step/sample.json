@@ -1,0 +1,34 @@
+[
+  {
+    "select_columns": [
+      "column_1",
+      "column_2"
+    ],
+    "drop_selected": false,
+    "map_columns_java": {
+      "column_1": "type_1",
+      "column_2": "type_2"
+    },
+    "map_columns_hive": {
+      "column_1": "type_1",
+      "column_2": "type_2"
+    }
+  },
+  {
+    "select_columns": [
+      "column_1",
+      "column_2"
+    ]
+  },
+  {
+    "select_columns": [
+      "column_1",
+      "column_2"
+    ],
+    "map_columns_hive": {
+      "column_1": "type_1",
+      "column_2": "type_2"
+    }
+  },
+  {}
+]

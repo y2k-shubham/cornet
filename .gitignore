@@ -137,3 +137,7 @@ crashlytics-build.properties
 
 .python-version
 .pytest_cache
+
+*.json
+
+!*.gitkeep
